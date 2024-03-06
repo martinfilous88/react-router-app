@@ -1,0 +1,34 @@
+body {
+    margin-left: 47%;
+}
+span {
+    padding: 20px;
+}
+   
+h1 {
+    font-family: Arial Black;
+}
+ #smazat {
+    margin: 5px;
+    background-color: red;
+    font-style: italic;
+    color: black;
+    border-radius: 10px;
+
+ }
+
+.splneny-ukol {
+    text-decoration: line-through;
+    color: blueviolet;
+}
+#oznac {
+    margin: 5px;
+    background-color: green;
+    font-style: italic;
+    color: black;
+    border-radius: 10px;
+}
+
+#ukoly {
+    margin-right: 100px;
+}
