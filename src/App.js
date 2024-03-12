@@ -6,6 +6,7 @@ import Pocitadlo from "./Pocitadlo";
 import Kavy from "./Kavy";
 import Ukolnicek from "./ukolnicek/Ukolnicek";
 import Kalkulacka from "./kalkulacka/Kalkulacka";
+import Eshop from "./Eshop";
 
 
 
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="kavy" element={<Kavy />} />
           <Route path="ukolnicek" element={<Ukolnicek />} />
           <Route path="kalkulacka" element={<Kalkulacka />} />
+          <Route path="eshop" element={<Eshop />} />
               <Route path="*" element={<NoPage />} />
 
               </Route>
