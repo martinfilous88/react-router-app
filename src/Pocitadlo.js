@@ -16,7 +16,7 @@ function Pocitadlo() {
         <>
             { viditelnost && 
                 <div>
-                    <h2 style={{ color: "green", fontSize: pocet }}>Font size: {pocet}</h2>
+                    <h2 style={{ color: "black", fontFamily: "Arial Black", fontSize: pocet }}>Font size: {pocet}</h2>
                     <button onClick={() => nastavPocet(pocet + 1)}>Přidej</button>
                     <button onClick={() => nastavPocet(pocet - 1)}>Odeber</button>
                 </div>

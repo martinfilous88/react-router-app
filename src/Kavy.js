@@ -40,7 +40,7 @@ function App() {
           <Grid item xs={2} key={kava.id} style={{ listStyle: "none" }}>
             <Paper onClick={() => nastavVybranouKavu(kava.title)} elevation={8} style={{ textAlign: "center" }}>
               <div className='coffee' key={kava.id} style={{ listStyleType: "none" }}>
-                <img src={kava.image} style={{ width: "50px" }}></img>
+                <img src={kava.image} style={{ width: "100px" }}></img>
                 <Typography variant="subtitle2">{kava.title}</Typography>
                 </div>
 
