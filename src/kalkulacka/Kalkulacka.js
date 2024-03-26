@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import CiselneTlacitko from "./CiselneTlacitko";
 import './Kalkulacka.css';
+import { Paper } from '@mui/material';
 
 function Kalkulacka() {
 
@@ -39,6 +40,7 @@ function Kalkulacka() {
 
     return (
         <>
+        <Paper variant="elevation" elevation={4} square={false} style={{ textAlign: "center" }}>
             <div id="Kalkulacka">
                 <div id="displej">{cislo}</div>
                 <div id="tlacitka">
@@ -66,6 +68,7 @@ function Kalkulacka() {
                     
                 </div>
             </div>
+            </Paper>
         </>
     )
 }

@@ -3,7 +3,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-import MaterialUILink from '@mui/material/Link'
+import MuiLink from '@mui/material/Link'
 import Button from '@mui/material/Button'
 
 export default function Layout() {
@@ -11,13 +11,15 @@ export default function Layout() {
         <>
             <nav>
                 <ul>
-                    <Link style={{ margin: 8 }} href="#" underline="hover" to="/"><MaterialUILink component="button" underline="none" variant="h5"><Button variant="contained" style={{backgroundColor: "black"}}>Home</Button></MaterialUILink></Link>
-                    <Link style={{ margin: 8 }} href="#" underline="hover" to="/pocitadlo"><MaterialUILink component="button" underline="none" variant="h5"><Button variant="contained" style={{backgroundColor: "black"}}>Počítadlo (použití Local Storage)</Button></MaterialUILink></Link>
-                    <Link style={{ margin: 8 }} href="#" underline="hover" to="/kavy"><MaterialUILink component="button" underline="none" variant="h5"><Button variant="contained" style={{backgroundColor: "black"}}>Seznam káv (použití API)</Button></MaterialUILink></Link>
-                    <Link style={{ margin: 8 }} href="#" underline="hover" to="/ukolnicek"><MaterialUILink component="button" underline="none" variant="h5"><Button variant="contained" style={{backgroundColor: "black"}}>Úkolníček (použití MaterialUI)</Button></MaterialUILink></Link>
-                    <Link style={{ margin: 8 }} href="#" underline="hover" to="/kalkulacka"><MaterialUILink component="button" underline="none" variant="h5"><Button variant="contained" style={{backgroundColor: "black"}}>Kalkulačka (načtení vstupu)</Button></MaterialUILink></Link>
-                    <Link style={{ margin: 8}} href="#" underline="hover" to="/Eshop"><MaterialUILink component="button" underline="none" variant="h5"><Button variant="contained"  style={{backgroundColor: "black"}}>E-Shop</Button></MaterialUILink></Link>
+                    <Button href="/react-portfolio/#/" variant="h5">Home</Button>
+                    <Button href="/react-portfolio/#/pocitadlo" variant="h5">Počítadlo</Button>
+                    <Button href="/react-portfolio/#/kavy" variant="h5">Seznam káv (použití API)</Button>
+                    <Button href="/react-portfolio/#/ukolnicek" variant="h5">Úkolníček (použití MaterialUI)</Button>
+                    <Button href="/react-portfolio/#/kalkulacka" variant="h5">Kalkulačka</Button>
+                    <Button href="/react-portfolio/#/eshop" variant="h5">E-shop</Button>
+                    <Button href="/react-portfolio/#/barva" variant="h5">Barva</Button>
                 </ul>
+
             </nav>
             <Outlet />
         </>

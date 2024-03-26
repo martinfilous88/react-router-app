@@ -7,6 +7,7 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import { Paper } from '@mui/material';
  
 
 
@@ -64,6 +65,7 @@ export default function Ukolnicek() {
 
     return (
         <>
+        <Paper variant="elevation" elevation={4} square={false} style={{ textAlign: "center" }}>
             <NovyUkol pridejUkol={pridejUkol} />
             <br></br>
             {/*seznamUkolu.map((ukol) => (
@@ -72,12 +74,14 @@ export default function Ukolnicek() {
             <br/>
             </>
         ))
-        */}
+        */}</Paper>
+        <Paper variant="elevation" elevation={4} square={false} style={{ textAlign: "center" }}>
             <div id="ukoly">
                 {seznamUkolu.map((ukol, poradi) => <PolozkaUkolu key={poradi} ukol={ukol} poradi={poradi} fceSmazat={smazatUkol} fceSpln={splnUkol}></PolozkaUkolu>)}
             </div>
             <div><b>Počet úkolů:{seznamUkolu.length}</b></div>
             <Button style={{ backgroundColor: barvaTlacitka, color: barvaTextu }} onClick={() => pridejUkol("novy ukol")}>Přidej náhodný úkol</Button>
+            </Paper>
         </>
     )
 }

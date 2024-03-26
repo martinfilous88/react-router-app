@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Paper } from "@mui/material";
 
 function Pocitadlo() {
 
@@ -14,6 +15,7 @@ function Pocitadlo() {
 
     return (
         <>
+        <Paper variant="elevation" elevation={4} square={false} style={{ textAlign: "center" }}>
             { viditelnost && 
                 <div>
                     <h2 style={{ color: "black", fontFamily: "Arial Black", fontSize: pocet }}>Font size: {pocet}</h2>
@@ -22,7 +24,7 @@ function Pocitadlo() {
                 </div>
             }
            
-            
+           </Paper>
         </>
     );
 }
